@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
 <script>
-    location.href="https://yuanzhan.top/popcornstaff/404";
+var url = purl();
+if (url.attr('host') == 'yzcxycxy.github.io') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('yzcxycxy.github.io', "yuanzhan.top");
+    window.location.replace(new_url); 
+}else {
+    window.location.href="yuanzhan.top/error";
+}
+    
 </script>
-
-<body>
-</body>
-
-</html>
